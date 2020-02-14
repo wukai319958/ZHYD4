@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SFBR.Repair.Api</name>
+    </assembly>
+    <members>
+        <member name="T:SFBR.Repair.Api.Controllers.CompanyController">
+            <summary>
+            维保单位维护服务
+            </summary>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.Get(System.Int32,System.Int32)">
+            <summary>
+            分页获取运维单位
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.Get(System.String)">
+            <summary>
+            获取单位详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.Post(SFBR.Repair.Api.ViewModel.Company)">
+            <summary>
+            获取单位详情
+            </summary>
+            <param name="company"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.Put(System.String,SFBR.Repair.Api.ViewModel.Company)">
+            <summary>
+            修改单位详情
+            </summary>
+            <param name="id"></param>
+            <param name="company"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.Delete(System.String)">
+            <summary>
+            删除单位
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.GetEmployees(System.Int32,System.Int32)">
+            <summary>
+            分页获取运维单位员工
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.GetEmployee(System.String)">
+            <summary>
+            获取单位员工详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.PostEmployee(System.String,SFBR.Repair.Api.ViewModel.Employee)">
+            <summary>
+            添加单位员工信息
+            </summary>
+            <param name="id"></param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.PutEmployee(System.String,System.String,SFBR.Repair.Api.ViewModel.Employee)">
+            <summary>
+            修改员工信息
+            </summary>
+            <param name="id">公司id</param>
+            <param name="employeeId">员工id</param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.CompanyController.DeleteEmployee(System.String,System.String)">
+            <summary>
+            删除单位
+            </summary>
+            <param name="id"></param>
+            <param name="employeeId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Repair.Api.Controllers.JobOrderController">
+            <summary>
+            任务单维护服务
+            </summary>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.Get(System.Int32,System.Int32)">
+            <summary>
+            分页获取任务单
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.Get(System.String)">
+            <summary>
+            获取任务单详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.Finish(System.String)">
+            <summary>
+            关闭任务单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.Post(SFBR.Repair.Api.ViewModel.JobOrder)">
+            <summary>
+            创建任务单
+            </summary>
+            <param name="company"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.Delete(System.String)">
+            <summary>
+            删除任务单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.Audit(System.String,SFBR.Repair.Api.ViewModel.AuditMessage)">
+            <summary>
+            添加审核记录
+            </summary>
+            <param name="id"></param>
+            <param name="auditMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Repair.Api.Controllers.JobOrderController.GetAudits(System.String,System.Int32,System.Int32)">
+            <summary>
+            分页获取某个任务单审核记录
+            </summary>
+            <param name="id">任务单编号</param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SFBR.Repair.Api.CustomExtensionsMethods.secretKey">
+            <summary>
+            安全密钥
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Infrastructure.RepairContext.Devices">
+            <summary>
+            设备基础信息
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Infrastructure.RepairContext.Companies">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Infrastructure.RepairContext.JobOrders">
+            <summary>
+            任务单
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Infrastructure.RepairContext.AuditMessages">
+            <summary>
+            审核内容（聊天记录）
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent">
+            <summary>
+            解除警报
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent">
+            <summary>
+            发生警报
+            </summary>
+        </member>
+        <member name="M:SFBR.Repair.Api.MainService.InitData(SFBR.Repair.Api.Infrastructure.RepairContext)">
+            <summary>
+            初始化基础数据
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:SFBR.Repair.Api.MainService.InitSqlScript(SFBR.Repair.Api.Infrastructure.RepairContext)">
+            <summary>
+            初始化视图、函数、存储过程等
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.Model.AuditMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.JobOrderId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.AuditContent">
+            <summary>
+            审核内容
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.OrderStatus">
+            <summary>
+            审核时的状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.AuditAccountId">
+            <summary>
+            审核人账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.AuditMessage.AuditName">
+            <summary>
+            审核人姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.CompanyName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.Address">
+            <summary>
+            单位地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.LeaderName">
+            <summary>
+            负责人姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.TelePhone">
+            <summary>
+            座机号码
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.MobilePhone">
+            <summary>
+            手机电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.Email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.Remark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Company.Operations">
+            <summary>
+            维保人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.Id">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Device.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.Model.Employee">
+            <summary>
+            维修人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.Name">
+            <summary>
+            维保人员姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.Email">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.TelePhone">
+            <summary>
+            座机号码
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.MobilePhone">
+            <summary>
+            手机电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.CompanyId">
+            <summary>
+            公司id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.Employee.Company">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.Model.JobOrder">
+            <summary>
+            任务单（展会暂不开发）
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.OrderNo">
+            <summary>
+            任务单号
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.Sender">
+            <summary>
+            派单人
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.SendType">
+            <summary>
+            派单类型：0 系统派单；1 手动派单；
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.OrderStatus">
+            <summary>
+            任务单状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.OrderType">
+            <summary>
+            任务单类型（普通任务单与站点无关、站点维护任务单）
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.WhereFrom">
+            <summary>
+            任务单来源（一般为系统或服务的编号）
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.CompanyId">
+            <summary>
+            处理单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.CompanyName">
+            <summary>
+            处理单位名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.CompanyPhone">
+            <summary>
+            处理单位负责人电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.OprationId">
+            <summary>
+            处理人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.OprationName">
+            <summary>
+            处理人员姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.OprationPhone">
+            <summary>
+            处理人员电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.RepairTime">
+            <summary>
+            默认修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.Description">
+            <summary>
+            任务单描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.CreationTime">
+            <summary>
+            派单时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.JobOrder.Messages">
+            <summary>
+            审核信息
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.Model.OrderStatus">
+            <summary>
+            任务单状态
+            </summary>
+        </member>
+        <member name="F:SFBR.Repair.Api.Model.OrderStatus.Start">
+            <summary>
+            开始
+            </summary>
+        </member>
+        <member name="F:SFBR.Repair.Api.Model.OrderStatus.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:SFBR.Repair.Api.Model.OrderType.Default">
+            <summary>
+            普通任务单
+            </summary>
+        </member>
+        <member name="F:SFBR.Repair.Api.Model.OrderType.Repair">
+            <summary>
+            报修任务单
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.Model.RepairOrder">
+            <summary>
+            维修任务单
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.RegionId">
+            <summary>
+            区域id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.EquipNum">
+            <summary>
+            设备编号（站点编号）
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.DevceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.Device">
+            <summary>
+            设备详情
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.RepairType">
+            <summary>
+            维修类型：智维终端、配件、负载、传感器、控制器、输出回路
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.CameraId">
+            <summary>
+            负载id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.AlarmId">
+            <summary>
+            关联的警报id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.FaultTime">
+            <summary>
+            故障发生时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.Model.RepairOrder.FaultReason">
+            <summary>
+            故障原因
+            </summary>
+        </member>
+        <member name="M:SFBR.Repair.Api.Startup.ConfigureEventBus(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            订阅外部事件
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.CompanyName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.Address">
+            <summary>
+            单位地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.LeaderName">
+            <summary>
+            负责人姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.TelePhone">
+            <summary>
+            座机号码
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.MobilePhone">
+            <summary>
+            手机电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.Email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Company.Remark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.Name">
+            <summary>
+            维保人员姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.Email">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.TelePhone">
+            <summary>
+            座机号码
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.MobilePhone">
+            <summary>
+            手机电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.CompanyId">
+            <summary>
+            公司id
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.Employee.Company">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Repair.Api.ViewModel.PageResult`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:SFBR.Repair.Api.ViewModel.PageResult`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int64,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rows">数据集合</param>
+            <param name="total">总条数</param>
+            <param name="pages">总页数</param>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.PageResult`1.Rows">
+            <summary>
+            数据集合
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.PageResult`1.Total">
+            <summary>
+            总条数
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.PageResult`1.Pages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:SFBR.Repair.Api.ViewModel.PageResult`1.PageSize">
+            <summary>
+            每页条数
+            </summary>
+        </member>
+    </members>
+</doc>

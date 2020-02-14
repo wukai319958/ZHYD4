@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SFBR.Log.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SFBR.Log.Api.Consumers.LogConsumer.HandleApplicationMessageReceivedAsync(MQTTnet.MqttApplicationMessageReceivedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Log.Api.Controllers.AlarmController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Log.Api.Controllers.AlarmController.GetAlarmCountByDisposeStatus">
+            <summary>
+            按警报状态统计警报数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Controllers.AlarmController.GetAlarmCountByLevel">
+            <summary>
+            按警报级别统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Controllers.AlarmController.GetAlarms(System.Int32,System.Int32)">
+            <summary>
+            分页获取警报消息
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Controllers.AlarmController.GetAlarmTopTime">
+            <summary>
+            获得警报处理时长Top5
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Log.Api.Controllers.LogController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Log.Api.Controllers.LogController.GetActionPages(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SFBR.Log.Api.CustomExtensionsMethods.secretKey">
+            <summary>
+            安全密钥
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Infrastructure.LogContext.Devices">
+            <summary>
+            设备基础信息
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Infrastructure.LogContext.AlarmLogs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Infrastructure.LogContext.ActionLogs">
+            <summary>
+            操作日志    
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.Infrastructure.QueryHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Log.Api.Infrastructure.QueryHelper.GetWhereToParString(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.String,System.String,System.String)">
+            <summary>
+            动态获取查询条件（sql脚本），无法做类型检查，映射的实体对象可以起别名。需要注意sql注入的问题
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="coll">请求的键值对集合</param>
+            <param name="prex">键值对key值前缀</param>
+            <param name="placeholder">数据库占位符</param>
+            <param name="Quoted">关键字转义</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Infrastructure.QueryHelper.DateLessFix(System.DateTime,System.String[])">
+            <summary>
+            修复时间格式
+            </summary>
+            <param name="value"></param>
+            <param name="formatter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Infrastructure.QueryHelper.Empty(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            空集合
+            </summary>
+            <param name="coll"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.Latitude">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.Longitude">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.Alarm">
+            <summary>
+            警报消息
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ClearTime">
+            <summary>
+            解除报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ClearReason">
+            <summary>
+            解除原因：正常解除，主机掉线
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent">
+            <summary>
+            解除警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.EquipNum">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.TargetCode">
+            <summary>
+            子设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.ClearTime">
+            <summary>
+            解除报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.ClearReason">
+            <summary>
+            解除原因：正常解除，主机掉线
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent">
+            <summary>
+            发生警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.Alarm">
+            <summary>
+            警报消息
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.IntegrationEvents.Events.Alarm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.LogId">
+            <summary>
+            日志编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmName">
+            <summary>
+            报警名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.GroupName">
+            <summary>
+            警报分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            不同的设备警报的来源可能不一样，比如监控终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.TargetCode">
+            <summary>
+            传感器、负载编号或者其他划分的子设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.Description">
+            <summary>
+            发生警报时发送的消息
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.RepairTime">
+            <summary>
+            规定修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.AlarmTime">
+            <summary>
+            报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.IsStatistics">
+            <summary>
+            是否参与统计
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.RealData">
+            <summary>
+            实时值（不是所有的警报都有）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.UpperLimit">
+            <summary>
+            报警上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.IntegrationEvents.Events.Alarm.LowerLimit">
+            <summary>
+            报警下限
+            </summary>
+        </member>
+        <member name="M:SFBR.Log.Api.MainService.InitData(SFBR.Log.Api.Infrastructure.LogContext)">
+            <summary>
+            初始化基础数据
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:SFBR.Log.Api.MainService.InitSqlScript(SFBR.Log.Api.Infrastructure.LogContext)">
+            <summary>
+            初始化视图、函数、存储过程等
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.Model.ActionLog">
+            <summary>
+            操作日志
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.Account">
+            <summary>
+            操作员账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.Name">
+            <summary>
+            操作员姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.DeviceCode">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.DeviceName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.FunctionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.Paramaters">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.ApiUrl">
+            <summary>
+            api
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.ActionDesciption">
+            <summary>
+            操作描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.CreationTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.ActionTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.ApplicationContext">
+            <summary>
+            日志来源
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.ActionLog.ContentType">
+            <summary>
+            请求的类型
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.Model.AlarmLog">
+            <summary>
+            警报日志
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.DeviceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.EquipNum">
+            <summary>
+            设备唯一编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmName">
+            <summary>
+            报警名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.GroupName">
+            <summary>
+            警报分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            不同的设备警报的来源可能不一样，比如监控终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.TargetCode">
+            <summary>
+            子设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmingDescription">
+            <summary>
+            发生警报时发送的消息
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmedDescription">
+            <summary>
+            解除警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.RepairTime">
+            <summary>
+            规定修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.AlarmTime">
+            <summary>
+            报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.IsClear">
+            <summary>
+            是否解除（主机离线也算解除）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.ClearTime">
+            <summary>
+            解除报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.ClearReason">
+            <summary>
+            解除原因：0 正常解除，1 主机掉线
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.IsStatistics">
+            <summary>
+            是否参与统计
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.RealData">
+            <summary>
+            实时值（不是所有的警报都有）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.UpperLimit">
+            <summary>
+            报警上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.LowerLimit">
+            <summary>
+            报警下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.Disposed">
+            <summary>
+            是否处理
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.DisposalContent">
+            <summary>
+            处理结果
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.DisposalUser">
+            <summary>
+            处理人账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.DisposalUserName">
+            <summary>
+            处理人姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.AlarmLog.DisposalTime">
+            <summary>
+            处理时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.Id">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.Model.Device.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="M:SFBR.Log.Api.Queries.ConnectionExtensions.PageingAsync``1(System.Data.IDbConnection,System.String,System.Int32,System.Int32,System.String,System.Object)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="db"></param>
+            <param name="sqltext">查询表达式</param>
+            <param name="page">页码</param>
+            <param name="rows">每页显示行数</param>
+            <param name="pagingSort">分页时的排序方式（该参数不可以前台传入）</param>
+            <param name="param">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Queries.ConnectionExtensions.Paging``1(System.Data.IDbConnection,System.String,System.Int32,System.Int32,System.String,System.Object)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="db"></param>
+            <param name="sqltext">查询表达式</param>
+            <param name="page">页码</param>
+            <param name="rows">每页显示行数</param>
+            <param name="pagingSort">分页时的排序方式（该参数不可以前台传入）</param>
+            <param name="param">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Log.Api.Startup.ConfigureEventBus(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            订阅外部事件
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmClearCount.ClearNum">
+            <summary>
+            已解除警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmClearCount.UnClearNum">
+            <summary>
+            未解除警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmDealTime.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmDealTime.ActualTime">
+            <summary>
+            实际处理时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmDealTime.RepairTime">
+            <summary>
+            设定处理时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmDealTime.Number">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.ViewModel.AlarmLevelCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmLevelCount.Name">
+            <summary>
+            等级名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmLevelCount.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DeviceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmName">
+            <summary>
+            报警名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.GroupName">
+            <summary>
+            警报分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            不同的设备警报的来源可能不一样，比如监控终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.TargetCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmingDescription">
+            <summary>
+            发生警报时发送的消息
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmedDescription">
+            <summary>
+            解除警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.RepairTime">
+            <summary>
+            规定修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.AlarmTime">
+            <summary>
+            报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.IsClear">
+            <summary>
+            是否解除（主机离线也算解除）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.ClearTime">
+            <summary>
+            解除报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.ClearReason">
+            <summary>
+            解除原因：正常解除，主机掉线
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.IsStatistics">
+            <summary>
+            是否参与统计
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.RealData">
+            <summary>
+            实时值（不是所有的警报都有）
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.UpperLimit">
+            <summary>
+            报警上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.LowerLimit">
+            <summary>
+            报警下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.Disposed">
+            <summary>
+            是否处理
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DisposalContent">
+            <summary>
+            处理结果
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DisposalUser">
+            <summary>
+            处理人账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DisposalUserName">
+            <summary>
+            处理人姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.AlarmMdoel.DisposalTime">
+            <summary>
+            处理时间
+            </summary>
+        </member>
+        <member name="T:SFBR.Log.Api.ViewModel.PageResult`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:SFBR.Log.Api.ViewModel.PageResult`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int64,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rows">数据集合</param>
+            <param name="total">总条数</param>
+            <param name="pages">总页数</param>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.PageResult`1.Rows">
+            <summary>
+            数据集合
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.PageResult`1.Total">
+            <summary>
+            总条数
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.PageResult`1.Pages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:SFBR.Log.Api.ViewModel.PageResult`1.PageSize">
+            <summary>
+            每页条数
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,3308 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SFBR.Device.Api</name>
+    </assembly>
+    <members>
+        <member name="P:SFBR.Device.Api.Application.Commands.Brand.CreateBrandCommand.BrandName">
+            <summary>
+            品牌名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Brand.CreateBrandCommand.GroupKey">
+            <summary>
+            分组关键字，比如：摄像机、路由器、交换机等
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Brand.CreateBrandCommand.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Brand.CreateBrandCommand.TentantId">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Brand.RemoveBrandCommand.Id">
+            <summary>
+            品牌Id
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand">
+            <summary>
+            创建设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.DeviceName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.EquipNum">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.DeviceIP">
+            <summary>
+            设备IP地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.RegionId">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.TentantId">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.DevicePort">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.ServerIP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.ServerPort">
+            <summary>
+            服务端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.Enabled">
+            <summary>
+            启用（手动输入的设备默认未启用）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.Connection">
+            <summary>
+            连接状态: 0 未连接； 1 连接
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommand.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.Device.CreateDeviceCommandHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.Device.SetDeviceNameCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.SetDeviceNameCommand.Id">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Device.SetDeviceNameCommand.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.CreateRegionCommand.ParentId">
+            <summary>
+            父级区域Id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.CreateRegionCommand.Description">
+            <summary>
+            区域描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.CreateRegionCommand.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.CreateRegionCommand.RegionCode">
+            <summary>
+            区域码
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.CreateRegionCommand.TenTantId">
+            <summary>
+             租户Id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.SetRegionNameCommand.Id">
+            <summary>
+            区域Id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.Region.SetRegionNameCommand.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.TerminalCommands.LockSettingCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.LockSettingCommand.Id">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.LockSettingCommand.FunctionCode">
+            <summary>
+            功能编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.LockSettingCommand.LockStatus">
+            <summary>
+            锁状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelEnabledCommand.Id">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelEnabledCommand.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelEnabledCommand.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand">
+            <summary>
+            修改回路默认名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand.Name">
+            <summary>
+            回路名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand.PortNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelVoltageCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelVoltageCommand.Id">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelVoltageCommand.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelVoltageCommand.Voltage">
+            <summary>
+            回路电压
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLoadNameCommand.Id">
+            <summary>
+            站点id(设备id)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLoadNameCommand.LoadId">
+            <summary>
+            负载id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLoadNameCommand.Name">
+            <summary>
+            负载名称
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLocationCommand">
+            <summary>
+            站点位置设置
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLocationCommand.Id">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLocationCommand.Latitude">
+            <summary>
+            纬度（南纬为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetLocationCommand.Longitude">
+            <summary>
+            经度（西经为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetRegionCommand.Id">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Commands.TerminalCommands.SetRegionCommand.RegionId">
+            <summary>
+            区域id
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.DomainEventHandlers.DeviceEventHandlers.DeviceOnlineDomainEventHandler.SyncConfigProfile(System.String)">
+            <summary>
+            设备上线同步配置
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.Latitude">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.Longitude">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOffLineIntegrationEvent.Alarm">
+            <summary>
+            警报消息
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ClearTime">
+            <summary>
+            解除报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.ClearReason">
+            <summary>
+            解除原因：正常解除，主机掉线
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.DeviceOnLineIntegrationEvent.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent">
+            <summary>
+            解除警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.EquipNum">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.TargetCode">
+            <summary>
+            子设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.ClearTime">
+            <summary>
+            解除报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.ClearReason">
+            <summary>
+            解除原因：正常解除，主机掉线
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalClearAlarmIntegrationEvent.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent">
+            <summary>
+            发生警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.DeviceId">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.DeviceName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.EquipNum">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.RegionId">
+            <summary>
+            站点分配的区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.RegionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.TentantName">
+            <summary>
+            租户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.ParentId">
+            <summary>
+            上一级设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.Latitude">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.Longitude">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.TerminalRaiseAlarmIntegrationEvent.Alarm">
+            <summary>
+            警报消息
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.LogId">
+            <summary>
+            日志编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmCode">
+            <summary>
+            警报编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmName">
+            <summary>
+            报警名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.GroupName">
+            <summary>
+            警报分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            不同的设备警报的来源可能不一样，比如监控终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.TargetCode">
+            <summary>
+            传感器、负载编号或者其他划分的子设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.Description">
+            <summary>
+            发生警报时发送的消息
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.RepairTime">
+            <summary>
+            规定修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.AlarmTime">
+            <summary>
+            报警时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.IsStatistics">
+            <summary>
+            是否参与统计
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.RealData">
+            <summary>
+            实时值（不是所有的警报都有）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.UpperLimit">
+            <summary>
+            报警上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.IntegrationEvents.Events.Alarm.LowerLimit">
+            <summary>
+            报警下限
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.BrandQueries.GetBrandList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.BrandViewModel.BrandName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.BrandViewModel.GroupKey">
+            <summary>
+            分组关键字，比如：摄像机、路由器、交换机等
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ConnectionExtensions.PageingAsync``1(System.Data.IDbConnection,System.String,System.Int32,System.Int32,System.String,System.Object)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="db"></param>
+            <param name="sqltext">查询表达式</param>
+            <param name="page">页码</param>
+            <param name="rows">每页显示行数</param>
+            <param name="pagingSort">分页时的排序方式（该参数不可以前台传入）</param>
+            <param name="param">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ConnectionExtensions.Paging``1(System.Data.IDbConnection,System.String,System.Int32,System.Int32,System.String,System.Object)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="db"></param>
+            <param name="sqltext">查询表达式</param>
+            <param name="page">页码</param>
+            <param name="rows">每页显示行数</param>
+            <param name="pagingSort">分页时的排序方式（该参数不可以前台传入）</param>
+            <param name="param">参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceQueries">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.DeviceQueries.#ctor(System.Data.IDbConnection)">
+            <summary>
+            
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.DeviceQueries.GetDeviceAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.DeviceQueries.GetSimpleDeviceAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.DeviceQueries.GetDeviceTypeAsync(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceType">
+            <summary>
+            某类设备的公共详情
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Code">
+            <summary>
+            编号（协议中的设备编号）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Model">
+            <summary>
+            型号（协议的版本号）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.GroupKey">
+            <summary>
+            分组key
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Enabled">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.AutoCreate">
+            <summary>
+            自动创建
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Alarms">
+            <summary>
+            该类设备拥有的警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Functions">
+            <summary>
+            该类型设备拥有的功能
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Channels">
+            <summary>
+            默认回路
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Parts">
+            <summary>
+            默认配件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Controllers">
+            <summary>
+            默认控制器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceType.Sensors">
+            <summary>
+            默认传感器
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm">
+            <summary>
+            该类型设备可能产生的警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.DeviceTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmCode">
+            <summary>
+            警报代码（协议解析的位置）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmName">
+            <summary>
+            警报名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.GroupName">
+            <summary>
+            警报分组（温度警报、电压警报、电流警报等等）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.Enabled">
+            <summary>
+            是否启用该警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.Status">
+            <summary>
+            当前值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.NormalValue">
+            <summary>
+            正常状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.TargetCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmingDescription">
+            <summary>
+            发生警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AlarmedDescription">
+            <summary>
+            解除警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.SendAlarmingMessage">
+            <summary>
+            报警时发送短信
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.SendAlarmedMessage">
+            <summary>
+            解除警报时发送短信
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.CallAlarmingPhone">
+            <summary>
+            报警时拨打语音电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.CallAlarmedPhone">
+            <summary>
+            解除报警时拨打语音电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.SendAlarmingEmail">
+            <summary>
+            报警时发送邮件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.SendAlarmedEmail">
+            <summary>
+            解除警报时发送邮件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.AutoSendOrder">
+            <summary>
+            自动派单
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.IsStatistics">
+            <summary>
+            是否参与统计
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeAlarm.RepairTime">
+            <summary>
+            默认修复时长
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceTypeFunction">
+            <summary>
+            该类型设备的功能
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.FunctionName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.FunctionCode">
+            <summary>
+            功能编号（内部自定义）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.Description">
+            <summary>
+            备注描述（帮助描述）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.Setting">
+            <summary>
+            默认设置的值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.SettingTypeName">
+            <summary>
+            值的类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeFunction.CallbackCodes">
+            <summary>
+            一个功能会有多个命令码
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceTypeChannel">
+            <summary>
+            该类型设备拥有的回路
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.PortDefaultName">
+            <summary>
+            输出端口默认名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.PortType">
+            <summary>
+            端口类型。0：电源 1：电源兼网口 2：网口 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.OutputType">
+            <summary>
+            输出类型：AC 交流电；DC 直流电
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.OutputThreePhase">
+            <summary>
+            三相输出
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.OutputValue">
+            <summary>
+            输出电压
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeChannel.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceTypePart">
+            <summary>
+            该类型设备可能拥有的各类配件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.PartCode">
+            <summary>
+            配件代码 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.PartName">
+            <summary>
+            配件名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.PartType">
+            <summary>
+            配件类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.HasStatus">
+            <summary>
+            拥有状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.StatusIndex">
+            <summary>
+            协议中的下标
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypePart.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceTypeController">
+            <summary>
+            该类型设备拥有的控制器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.ControllerCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.ControllerType">
+            <summary>
+            控制器类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.Buttons">
+            <summary>
+            按钮（英文逗号隔开）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.ControllerStatus">
+            <summary>
+            控制器默认状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeController.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceTypeSensor">
+            <summary>
+            该类型设备拥有的传感器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.SensorCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.SensorName">
+            <summary>
+            传感器名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.SensorType">
+            <summary>
+            配件代码 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.UpperValue">
+            <summary>
+            模拟量上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.LowerValue">
+            <summary>
+            模拟量下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceTypeSensor.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceModel">
+            <summary>
+            设备详情
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.EquipNum">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.DeviceName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.IsMaster">
+            <summary>
+            是否为主机（配电监控器会挂载，采集器、遥控器等子设备，这些设备不能简单的划为传感器或者开关）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.DeviceIP">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.DevicePort">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.ServerIP">
+            <summary>
+            服务地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.ServerPort">
+            <summary>
+            服务端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.ParentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.Enabled">
+            <summary>
+            启用（手动输入的设备默认未启用）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.Connection">
+            <summary>
+            连接状态: 0 未连接； 1 连接
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.LocalCreationTimeString">
+            <summary>
+            本地时间字符串
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.TentantId">
+            <summary>
+            租户
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceModel.InstallTime">
+            <summary>
+            安装时间
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.TerminalDevice">
+            <summary>
+            智维终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.TerminalCode">
+            <summary>
+            终端版本 0 标准版 1 简配版
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.AlarmCount">
+            <summary>
+            发生警报的数量，大于0即为发生警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.LocationId">
+            <summary>
+            位置信息
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.RegionId">
+            <summary>
+            区域id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.RegionCode">
+            <summary>
+            区域编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Latitude">
+            <summary>
+            纬度（南纬为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Longitude">
+            <summary>
+            经度（西经为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.IsPosition">
+            <summary>
+            是否定位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Channels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Controllers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.DeviceAlarms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Parts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Sensors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.TimedTasks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Loads">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.DeviceFunctions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Location">
+            <summary>
+            位置信息
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalDevice.Region">
+            <summary>
+            区域信息
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Load">
+            <summary>
+            负载
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Load.PortNumber">
+            <summary>
+            挂载的端口
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Camera">
+            <summary>
+            摄像机
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Camera.DeviceProps">
+            <summary>
+            扩展属性
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Channel">
+            <summary>
+            设备回路
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.DeviceId">
+            <summary>
+            主机id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.PortDefaultName">
+            <summary>
+            输出端口默认名称（不允许用户修改，设备上写的是什么就是什么。用户自定义的是ChannelName）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.PortType">
+            <summary>
+            端口类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.OutputType">
+            <summary>
+            输出类型：AC 交流电；DC 直流电
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.OutputThreePhase">
+            <summary>
+            三相输出
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.OutputValue">
+            <summary>
+            输出电压
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Channel.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Controller">
+            <summary>
+            设备控制器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.ControllerCode">
+            <summary>
+            控制器（开关）编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.PortNumber">
+            <summary>
+            控制的回路编号(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.Buttons">
+            <summary>
+            按钮（英文逗号隔开）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.ControllerStatus">
+            <summary>
+            控制器当前状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Controller.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceAlarm">
+            <summary>
+            设备警报及状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmCode">
+            <summary>
+            警报代码（协议中的位置）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmName">
+            <summary>
+            警报名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.GroupName">
+            <summary>
+            警报分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            不同的设备警报的来源可能不一样，比如监控终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.Enabled">
+            <summary>
+            是否启用该警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.Status">
+            <summary>
+            当前状态值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.NormalValue">
+            <summary>
+            正常值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.IsAlarm">
+            <summary>
+            是否发生警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.RepairTime">
+            <summary>
+            修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.TargetCode">
+            <summary>
+            警报对象编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmingDescription">
+            <summary>
+            发生警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.AlarmedDescription">
+            <summary>
+            解除警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.SendAlarmingMessage">
+            <summary>
+            报警时发送短信
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.SendAlarmedMessage">
+            <summary>
+            解除警报时发送短信
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.CallAlarmingPhone">
+            <summary>
+            报警时拨打语音电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.CallAlarmedPhone">
+            <summary>
+            解除报警时拨打语音电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.SendAlarmingEmail">
+            <summary>
+            报警时发送邮件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceAlarm.SendAlarmedEmail">
+            <summary>
+            解除警报时发送邮件
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceFunction">
+            <summary>
+            设备功能及配置内容
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.FunctionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.FunctionName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.PortNumber">
+            <summary>
+            指令接收对象(-1表示主机)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.Setting">
+            <summary>
+            设置的值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.LockSetting">
+            <summary>
+            锁定配置，防止全局配置时覆盖值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceFunction.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Part">
+            <summary>
+            设备配件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.DeviceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.PortNumber">
+            <summary>
+            回路地址（-1表示主机）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.PartCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.PartName">
+            <summary>
+            配件名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.PartType">
+            <summary>
+            配件类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.HasStatus">
+            <summary>
+            拥有状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.Enabled">
+            <summary>
+            是否启用
+            </summary>                                   
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.Status">
+            <summary>
+            开关量状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Part.InstallTime">
+            <summary>
+            安装时间
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Sensor">
+            <summary>
+            设备传感器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.DeviceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.SensorCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.SensorName">
+            <summary>
+            传感器名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.SensorType">
+            <summary>
+            传感器类型 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.UpperValue">
+            <summary>
+            模拟量上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.LowerValue">
+            <summary>
+            模拟量下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.RealValue">
+            <summary>
+            模拟量
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Sensor.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.TimedTask">
+            <summary>
+            设备定时任务
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.TaskId">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.ExecType">
+            <summary>
+            定时类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.ExecAction">
+            <summary>
+            执行的动作
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.Executed">
+            <summary>
+            是否已执行（只有只执行一次的才有该状态）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.LoopType">
+            <summary>
+            循环周期类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.Moment">
+            <summary>
+            执行的时刻
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.LoopMonent">
+            <summary>
+            周期内参与循环的时间（比如，每周一执行或者每月的1号 10 20号执行,多个由英文逗号隔开）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TimedTask.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.DeviceProp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.DeviceId">
+            <summary>
+            负载id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.PropName">
+            <summary>
+            属性名称（前端绑定的变量）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.PropText">
+            <summary>
+            属性显示文本（前端提示文本）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.PropType">
+            <summary>
+            属性类型（默认字符串）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.GroupName">
+            <summary>
+            分组名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.PropValue">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.DeviceProp.CanRemove">
+            <summary>
+            是否可以删除（某些固定属性不允许删除）
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Moment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Moment.Month">
+            <summary>
+            月
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Moment.Day">
+            <summary>
+            日
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Moment.Hour">
+            <summary>
+            时
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Moment.Minute">
+            <summary>
+            分
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Moment.Second">
+            <summary>
+            秒
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Location">
+            <summary>
+            位置信息
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Location.Latitude">
+            <summary>
+            纬度（南纬为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Location.Longitude">
+            <summary>
+            经度（西经为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Location.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.Region">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Region.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Region.RegionCode">
+            <summary>
+            区域自定义代码
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Region.RegionName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Region.ParentId">
+            <summary>
+            上级区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Region.TentantId">
+            <summary>
+            租户
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.Region.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IBrandQueries.GetBrandList">
+            <summary>
+            获取品牌集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.Exists(System.String)">
+            <summary>
+            判断设备是否存在
+            </summary>
+            <param name="equipNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetDeviceAsync(System.String)">
+            <summary>
+            获取设备详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetSimpleDeviceAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetFunctionAsync(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="functionCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetChannelAsync(System.String,System.Int32)">
+            <summary>
+            获取回路信息
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetDeviceTypeAsync(System.String,System.String)">
+            <summary>
+            根据设备编号和型号获取类型轻轻
+            </summary>
+            <param name="code"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetTerminalPageAsync(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.Int32,System.Int32)">
+            <summary>
+            智维终端分页查询
+            </summary>
+            <param name="query">动态查询条件</param>
+            <param name="page">页码</param>
+            <param name="rows">每页条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IDeviceQueries.GetCameraPageAsync(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.Int32,System.Int32)">
+            <summary>
+            分页获取摄像机列表
+            </summary>
+            <param name="query"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IRegionQueries.GetRegionList">
+            <summary>
+            获取区域集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IRegionQueries.GetChildren(System.String)">
+            <summary>
+             获取该区域下的下一级子区域
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IRegionQueries.GetParent(System.String)">
+            <summary>
+            获取父区域
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.IRegionQueries.GetTree">
+            <summary>
+            获得该区域下的所有子区域（递归）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetTerminalCountByStatus">
+            <summary>
+            按状态统计站点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetCameraCountByStatus">
+            <summary>
+            按状态统计照相机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetTerminalPageAsync(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.Int32,System.Int32)">
+            <summary>
+            分页获取站点
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetTerminalsWhereUnsetLocation">
+            <summary>
+            获取未定位的站点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetCameras(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.Int32,System.Int32)">
+            <summary>
+            分页获取摄像头列表
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetLoads(System.String)">
+            <summary>
+            根据设备上的id获取负载集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetCameras(System.String)">
+            <summary>
+            根据id获取摄像头集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetParts(System.String)">
+            <summary>
+            根据id获取配件集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.ITerminalQueries.GetControllers(System.String)">
+            <summary>
+            根据设备id获取配件开关集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.PageResult`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.PageResult`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int64,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rows">数据集合</param>
+            <param name="total">总条数</param>
+            <param name="pages">总页数</param>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.PageResult`1.Rows">
+            <summary>
+            数据集合
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.PageResult`1.Total">
+            <summary>
+            总条数
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.PageResult`1.Pages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.PageResult`1.PageSize">
+            <summary>
+            每页条数
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.RegionModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionModel.RegionCode">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionModel.RegionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionModel.ParentId">
+            <summary>
+            上级区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionModel.TentantId">
+            <summary>
+            租户
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionModel.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.RegionTreeModel">
+            <summary>
+            树形结构数据
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.RegionTreeModel.Children">
+            <summary>
+            子区域
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.TerminalCountResult">
+            <summary>
+            按状态站点统计结果
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalCountResult.Normal">
+            <summary>
+            在线（正常）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalCountResult.Alarm">
+            <summary>
+            在线（报警）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalCountResult.OffLine">
+            <summary>
+            离线
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.CameraCountResult">
+            <summary>
+            按状态摄像机统计结果
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.CameraCountResult.OnLine">
+            <summary>
+            在线（正常）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.CameraCountResult.OffLine">
+            <summary>
+            离线
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.TerminalRerecoveryResult">
+            <summary>
+            站点排名
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalRerecoveryResult.Id">
+            <summary>
+            站点id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalRerecoveryResult.Name">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalRerecoveryResult.RepairTime">
+            <summary>
+            修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Queries.TerminalRerecoveryResult.Ranking">
+            <summary>
+            排名
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Application.Queries.TerminalQueries">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetTerminalCountByStatus">
+            <summary>
+            按状态统计站点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetCameraCountByStatus">
+            <summary>
+            按状态统计照相机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetCameras(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.Int32,System.Int32)">
+            <summary>
+            分页获取摄像头列表
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetCameras(System.String)">
+            <summary>
+            根据id获取摄像头集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetControllers(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetLoads(System.String)">
+            <summary>
+            根据设备上的id获取负载集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetParts(System.String)">
+            <summary>
+            根据id获取配件集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetTerminalPageAsync(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.Extensions.Primitives.StringValues}},System.Int32,System.Int32)">
+            <summary>
+            分页获取站点
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Queries.TerminalQueries.GetTerminalsWhereUnsetLocation">
+            <summary>
+            获取未定位的站点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:SFBR.Device.Api.Application.Workers.TerminalWorker.statusWorker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Application.Workers.TerminalWorker.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Application.Workers.TerminalWorker.Execute(SFBR.Device.Common.BaseResultDto{SFBR.Device.Common.Commands.SkynetTerminalCmdEnum},System.IServiceProvider)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="services"></param>
+        </member>
+        <member name="T:SFBR.Device.Api.Controllers.BrandController">
+            <summary>
+            品牌管理服务
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.BrandController.GetBrandList">
+            <summary>
+            获取品牌集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.BrandController.AddBrand(SFBR.Device.Api.Application.Commands.Brand.CreateBrandCommand)">
+            <summary>
+            创建品牌
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.BrandController.RemoveBrand(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Controllers.DataController">
+            <summary>
+            综合业务数据查询服务
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Controllers.DeviceController">
+            <summary>
+            设备服务（公共服务）
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.DeviceController.#ctor(MediatR.IMediator,SFBR.Device.Api.Application.Queries.IDeviceQueries,SFBR.Device.Api.Infrastructure.Services.IIdentityService,Microsoft.Extensions.Logging.ILogger{SFBR.Device.Api.Controllers.DeviceController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="deviceQueries"></param>
+            <param name="identityService"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.DeviceController.AddDevice(SFBR.Device.Api.Models.CreateDeviceModel)">
+            <summary>
+            手动添加设备
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.DeviceController.GetDeviceDetailAsync(System.String)">
+            <summary>
+            获取设备详情
+            </summary>
+            <param name="id">设备id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.DeviceController.SetDeviceName(System.String,SFBR.Device.Api.Models.Simple{System.String})">
+            <summary>
+            修改终端名称
+            </summary>
+            <param name="id">设备id</param>
+            <param name="command">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.DeviceController.SetOAMInfo(System.String,SFBR.Device.Api.Models.Simple{System.String})">
+            <summary>
+            设置运维信息
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.DeviceController.GetDiscoveryAsync(System.String)">
+            <summary>
+            获取发现的设备
+            </summary>
+            <param name="id">设备id</param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Controllers.HomeController">
+            <summary>
+            API接口描述
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.HomeController.Mian">
+            <summary>
+            主页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Controllers.RegionController">
+            <summary>
+            区域服务
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.#ctor(MediatR.IMediator,SFBR.Device.Api.Application.Queries.IRegionQueries,SFBR.Device.Api.Infrastructure.Services.IIdentityService,Microsoft.Extensions.Logging.ILogger{SFBR.Device.Api.Controllers.RegionController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="regionQueries"></param>
+            <param name="identityService"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.GetTerminals(System.String)">
+            <summary>
+            根据区域获取站点集合
+            </summary>
+            <param name="regionId">页码</param>
+            <returns></returns>    
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.GetRegionList">
+            <summary>
+            获取区域集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.GetChildren(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.GetParent(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.GetTree">
+            <summary>
+            所有区域
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.AddRegion(SFBR.Device.Api.Application.Commands.Region.CreateRegionCommand)">
+            <summary>
+            创建区域
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.SetRegionName(System.String,SFBR.Device.Api.Models.Simple{System.String})">
+            <summary>
+            修改区域名称
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.RegionController.RemoveRegion(System.String)">
+            <summary>
+            删除区域
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Api.Controllers.TerminalController">
+            <summary>
+            智维终端
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.#ctor(MediatR.IMediator,SFBR.Device.Api.Application.Queries.IDeviceQueries,SFBR.Device.Api.Infrastructure.Services.IIdentityService,Microsoft.Extensions.Logging.ILogger{SFBR.Device.Api.Controllers.DeviceController},AutoMapper.IMapper,SFBR.Device.Common.Interface.ISkynetTerminalClient,SFBR.Device.Api.Application.Queries.ITerminalQueries,MQTTnet.Client.IMqttClient,Microsoft.Extensions.Options.IOptions{SFBR.Device.Api.DeviceSettings})">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="deviceQueries"></param>
+            <param name="identityService"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+            <param name="skynetTerminalClient"></param>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetTerminalCountByStatus">
+            <summary>
+            按状态统计站点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameraCountByStatus">
+            <summary>
+            按状态统计照相机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetTerminals(System.Int32,System.Int32)">
+            <summary>
+            分页获取站点列表
+            </summary>
+            <param name="page">页码</param>
+            <param name="rows">每页条数</param>
+            <returns></returns>    
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetTerminalsWhereUnsetLocation">
+            <summary>
+            获取未定位站点列表
+            </summary>
+            <returns></returns>    
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameras(System.Int32,System.Int32)">
+             <summary>
+            分页获取摄像头列表
+             </summary>
+             <param name="page"></param>
+             <param name="rows"></param>
+             <returns></returns>   
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetDeviceDetailAsync(System.String)">
+            <summary>
+            获取设备详情
+            </summary>
+            <param name="id">设备id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetLoads(System.String)">
+             <summary>
+            根据设备id获取负载集合
+             </summary>
+             <param name="id"></param>
+             <returns></returns>   
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameras(System.String)">
+             <summary>
+            根据设备id获取摄像头集合
+             </summary>
+             <param name="id"></param>
+             <returns></returns>   
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetParts(System.String)">
+             <summary>
+            根据设备id获取配件集合
+             </summary>
+             <param name="id"></param>
+             <returns></returns>   
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetControllers(System.String)">
+             <summary>
+            根据设备id获取配件开关集合
+             </summary>
+             <param name="id"></param>
+             <returns></returns>   
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetLocation(System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetLocationCommand)">
+            <summary>
+            站点定位
+            </summary>
+            <param name="id">设备id</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetDeviceRegion(System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetRegionCommand)">
+            <summary>
+            分配区域
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.LockSetting(System.String,System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.LockSettingCommand)">
+            <summary>
+            锁定配置
+            </summary>
+            <param name="id"></param>
+            <param name="functionCode">功能编号</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelName(System.String,System.Int32,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand)">
+            <summary>
+            设置回路名称
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber">回路编号</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelVoltage(System.String,System.Int32,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelVoltageCommand)">
+            <summary>
+            设置回路输出电压
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber">回路编号</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelEnabled(System.String,System.Int32,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelEnabledCommand)">
+            <summary>
+            设置回路启用状态
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber">回路编号</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetLoadName(System.String,System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetLoadNameCommand)">
+            <summary>
+            设置负载名称
+            </summary>
+            <param name="id"></param>
+            <param name="loadid">负载id</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetLoadPropValue(System.String,System.String,System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand)">
+            <summary>
+            修改负载扩展属性值
+            （目前只有摄像机才有扩展属性，暂不开放添加和删除自定义属性）
+            </summary>
+            <param name="id"></param>
+            <param name="loadid">负载id</param>
+            <param name="propid">负载id</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.AddLoadProp(System.String,System.String,System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand)">
+            <summary>
+            添加负载扩展属性
+            </summary>
+            <param name="id"></param>
+            <param name="loadid">负载id</param>
+            <param name="propid">负载id</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.RemoveLoadProp(System.String,System.String,System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand)">
+            <summary>
+            移除负载扩展属性
+            </summary>
+            <param name="id"></param>
+            <param name="loadid">负载id</param>
+            <param name="propid">负载id</param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.AddLoad(System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand)">
+            <summary>
+            添加负载
+            简易版本只有一个电源输出端口，端口拥有哪些设备都是用户自己定义
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.RemoveLoad(System.String,SFBR.Device.Api.Application.Commands.TerminalCommands.SetChannelNameCommand)">
+            <summary>
+            移除负载
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.ExecFunction(System.String,System.Func{SFBR.Device.Api.Application.Queries.DeviceModel,SFBR.Device.Common.ResponseModel},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="func"></param>
+            <param name="functionCode">功能编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.ReadDeviceTime(System.String)">
+            <summary>
+            读取设备时间
+            </summary>
+            <param name="id">设备id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetDeviceTime(System.String)">
+            <summary>
+            单个校时
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetDeviceTimeBatch">
+            <summary>
+            批量校时
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameraPosition(System.String,System.Int32)">
+            <summary>
+            获取摄像头位置
+            </summary>
+            <param name="id"></param>
+            <param name="index">摄像头编号：1-8</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetCameraPosition(System.String,System.Int32,SFBR.Device.Api.Models.Terminal.CameraPostion)">
+            <summary>
+            设置摄像头位置
+            </summary>
+            <param name="id"></param>
+            <param name="index">摄像头编号：1-8</param>
+            <param name="position"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetCameraPositionBatch(SFBR.Device.Api.Models.Terminal.CameraPostion)">
+            <summary>
+            批量设置摄像头位置
+            </summary>
+            <param name="id"></param>
+            <param name="position"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameraIP(System.String,System.Int32)">
+            <summary>
+            获取摄像头ip
+            </summary>
+            <param name="id"></param>
+            <param name="index">摄像机编号1-8</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetCameraIP(System.String,System.Int32,SFBR.Device.Api.Models.Terminal.CameraIP)">
+            <summary>
+            设置摄像头ip
+            </summary>
+            <param name="id"></param>
+            <param name="index">摄像机编号1-8</param>
+            <param name="cameraIP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetCameraIPBatch(SFBR.Device.Api.Models.Terminal.CameraIP)">
+            <summary>
+            批量设置摄像头ip
+            </summary>
+            <param name="id"></param>
+            <param name="cameraIP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameraCheckFrequency(System.String)">
+            <summary>
+            获取摄像头监测频率
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetCameraCheckFrequency(System.String,SFBR.Device.Api.Models.Simple{System.Int32})">
+            <summary>
+            设置摄像头监测频率
+            </summary>
+            <param name="id"></param>
+            <param name="frequency"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetCameraCheckFrequencyBatch(SFBR.Device.Api.Models.Terminal.CameraPostion)">
+            <summary>
+            批量设置摄像头监测频率
+            </summary>
+            <param name="id"></param>
+            <param name="frequency"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetDefending(System.String)">
+            <summary>
+            读取撤防时长
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetDefending(System.String,SFBR.Device.Api.Models.Terminal.DefendingModel)">
+            <summary>
+            设置撤防时长
+            </summary>
+            <param name="id"></param>
+            <param name="defending"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetDefendingBatcg(SFBR.Device.Api.Models.Terminal.DefendingModel)">
+            <summary>
+            批量设置撤防时长
+            </summary>
+            <param name="id"></param>
+            <param name="defending"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetThreshold(System.String)">
+            <summary>
+            读取报警阈值
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetThreshold(System.String,SFBR.Device.Api.Models.Terminal.ThresholdModel)">
+            <summary>
+            设置报警阈值
+            </summary>
+            <param name="id"></param>
+            <param name="thresholdModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetThresholdBatch(SFBR.Device.Api.Models.Terminal.ThresholdModel)">
+            <summary>
+            批量设置报警阈值
+            </summary>
+            <param name="thresholdModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetChannelModel(System.String,System.Int32)">
+            <summary>
+            读取回路模式
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelModel(System.String,System.Int32,SFBR.Device.Api.Models.Simple{System.Int32})">
+            <summary>
+            设置回路模式
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber">回路端口</param>
+            <param name="setting">0 禁止设备主动控制；1 允许设备主动控制（比如温度过高时自动启动风扇）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelModelBatch(System.Int32,SFBR.Device.Api.Models.Simple{System.Int32})">
+            <summary>
+            批量设置回路模式
+            </summary>
+            <param name="portNumber">回路端口</param>
+            <param name="setting">0 禁止设备主动控制；1 允许设备主动控制（比如温度过高时自动启动风扇）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetChannelTask(System.String,System.Int32)">
+            <summary>
+            读取回路定时任务
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelTask(System.String,System.Int32,System.Collections.Generic.List{SFBR.Device.Api.Models.Terminal.ChannelTask})">
+            <summary>
+            设置回路定时任务
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber">回路端口</param>
+            <param name="setting">0 禁止设备主动控制；1 允许设备主动控制（比如温度过高时自动启动风扇）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelTaskBatch(System.Int32,System.Collections.Generic.List{SFBR.Device.Api.Models.Terminal.ChannelTask})">
+            <summary>
+            批量设置回路定时任务
+            </summary>
+            <param name="portNumber">回路端口</param>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetChannelSwitchStatus(System.String,System.Int32)">
+            <summary>
+            读取开关状态
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelSwitchStatus(System.String,System.Int32,SFBR.Device.Api.Models.Simple{System.Int32})">
+            <summary>
+            设置开关状态
+            </summary>
+            <param name="id"></param>
+            <param name="portNumber">回路端口</param>
+            <param name="switchStatuse">1 开，0 关</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.SetChannelSwitchStatusBatch(System.Int32,System.Collections.Generic.List{SFBR.Device.Api.Models.SwitchStatus})">
+            <summary>
+            批量设置开关状态
+            </summary>
+            <param name="portNumber">回路端口</param>
+            <param name="switchStatuses">on 开，off 关</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetPosition(System.String)">
+            <summary>
+            读取定位
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetInfoFromDevice(System.String)">
+            <summary>
+            读取设备信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetCameraVedioUrl(System.String,System.Int32)">
+            <summary>
+            获取摄像头视频流
+            </summary>
+            <param name="id"></param>
+            <param name="cameraIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Api.Controllers.TerminalController.GetVedioUrl(System.String)">
+            <summary>
+            获取网络视频流
+            </summary>
+            <param name="sourceurl"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SFBR.Device.Api.CustomExtensionsMethods.secretKey">
+            <summary>
+            安全密钥
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.CustomExtensionsMethods.MapCustomDoc(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            自定义文档
+            </summary>
+            <param name="app"></param>
+            <param name="serviceName">服务名称</param>
+            <param name="host">服务地址</param>
+            <returns></returns>
+        </member>
+        <member name="P:SFBR.Device.Api.DeviceSettings.ConnectionString">
+            <summary>
+            数据库链接字符串
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.DeviceSettings.EventBusConnection">
+            <summary>
+            消息队列
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.MainService.InitData(SFBR.Device.Infrastructure.DeviceContext)">
+            <summary>
+            初始化基础数据
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:SFBR.Device.Api.MainService.InitSqlScript(SFBR.Device.Infrastructure.DeviceContext)">
+            <summary>
+            初始化视图、函数、存储过程等
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.CreateDeviceModel.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.CreateDeviceModel.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.CreateDeviceModel.DeviceName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.CreateDeviceModel.EquipNum">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.CreateDeviceModel.RegionId">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.LogicModel">
+            <summary>
+            逻辑操作返回结果
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Models.LogicModel.#ctor(System.Boolean,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+            <param name="code"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.LogicModel.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.LogicModel.Code">
+            <summary>
+            代码，成功为0
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.LogicModel.Message">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.Simple`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Simple`1.Data">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.SwitchStatus">
+            <summary>
+            开关状态
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Api.Models.SwitchStatus.Off">
+            <summary>
+            关
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Api.Models.SwitchStatus.On">
+            <summary>
+            开
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.Terminal.CameraIP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.CameraIP.IP">
+            <summary>
+            摄像机IP
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.CameraIP.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.Terminal.CameraPostion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.CameraPostion.CameraIndex">
+            <summary>
+            摄像头（其他网络设备）编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.CameraPostion.Postion">
+            <summary>
+            绑定位置
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.Terminal.Postion">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Api.Models.Terminal.Postion.Default">
+            <summary>
+            默认端口
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Api.Models.Terminal.Postion.Output1">
+            <summary>
+            输出端口1
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Api.Models.Terminal.Postion.Output2">
+            <summary>
+            输出端口2
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.Terminal.ChannelTask">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ChannelTask.Index">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ChannelTask.Enable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ChannelTask.Onece">
+            <summary>
+            是否为单次
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ChannelTask.Start">
+            <summary>
+            开始时间：月日时分（01-12 08:33）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ChannelTask.End">
+            <summary>
+            结束时间：格式同开始时间
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Api.Models.Terminal.DefendingModel">
+            <summary>
+            撤防配置
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.DefendingModel.Enable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.DefendingModel.Start">
+            <summary>
+            开始时间：月日时分（01-12 08:33）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.DefendingModel.End">
+            <summary>
+            结束时间：格式同开始时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Upper_V">
+            <summary>
+            电压上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Lower_V">
+            <summary>
+            电压下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Upper_A">
+            <summary>
+            电流上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Lower_A">
+            <summary>
+            电流下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Upper_T">
+            <summary>
+            温度上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Lower_T">
+            <summary>
+            温度下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Api.Models.Terminal.ThresholdModel.Upper_H">
+            <summary>
+            湿度上限
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:SFBR.Device.Api.Startup.ConfigureEventBus(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            订阅外部事件
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1915 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SFBR.Device.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand">
+            <summary>
+            品牌维护
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="brandName"></param>
+            <param name="groupKey"></param>
+            <param name="tentantId"></param>
+            <param name="description"></param>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand.BrandName">
+            <summary>
+            品牌名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand.GroupKey">
+            <summary>
+            分组关键字，比如：摄像机、路由器、交换机等
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand.TentantId">
+            <summary>
+            所属租户
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.BrandAggregate.IBrandRepository.Add(SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand)">
+            <summary>
+            新增
+            </summary>
+            <param name="brand"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.BrandAggregate.IBrandRepository.Update(SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand)">
+            <summary>
+            全部更新
+            </summary>
+            <param name="brand"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.BrandAggregate.IBrandRepository.Patch(SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand)">
+            <summary>
+            只更新修改部分
+            </summary>
+            <param name="brand"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.BrandAggregate.IBrandRepository.Delete(SFBR.Device.Domain.AggregatesModel.BrandAggregate.Brand)">
+            <summary>
+            删除
+            </summary>
+            <param name="brand"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.BrandAggregate.IBrandRepository.GetAsync(System.String)">
+            <summary>
+            根据主键获取设备
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel">
+            <summary>
+            主机的输出端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.PortNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.PortType">
+            <summary>
+            端口类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.PortDefaultName">
+            <summary>
+            输出端口默认名称（不允许用户修改，设备上写的是什么就是什么。用户自定义的是ChannelName）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.OutputType">
+            <summary>
+            输出类型：AC 交流电；DC 直流电
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.OutputThreePhase">
+            <summary>
+            三相输出
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.OutputValue">
+            <summary>
+            输出电压
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Channel.SetEnabled(System.Boolean)">
+            <summary>
+            是否启用
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller">
+            <summary>
+            控制器（允许远程控制，只能主机控制的不算）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.ControllerCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.Buttons">
+            <summary>
+            按钮（英文逗号隔开）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.ControllerStatus">
+            <summary>
+            控制器当前状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Controller.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device">
+            <summary>
+            设备
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.EquipNum">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.ModelCode">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.IsMaster">
+            <summary>
+            是否为主机（配电监控器会挂载，采集器、遥控器等子设备，这些设备不能简单的划为传感器或者开关）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.DeviceIP">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.DevicePort">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.ServerIP">
+            <summary>
+            服务地址
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.ServerPort">
+            <summary>
+            服务端口
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.ParentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.Enabled">
+            <summary>
+            启用（手动输入的设备默认未启用）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.Connection">
+            <summary>
+            连接状态: 0 未连接； 1 连接
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.DeviceName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.TentantId">
+            <summary>
+            租户
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.InstallTime">
+            <summary>
+            安装时间
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.SetConnetion(System.Int32)">
+            <summary>
+            设置连接状态
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.SetTentantId(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tentantId"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device.SetOAMInfo(System.String,System.String,System.String,System.Double,System.Nullable{System.DateTime})">
+            <summary>
+            设置维保信息
+            </summary>
+            <param name="companyId"></param>
+            <param name="oprationId"></param>
+            <param name="brandId"></param>
+            <param name="warranty"></param>
+            <param name="installTime"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm">
+            <summary>
+            设备警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.AlarmCode">
+            <summary>
+            警报代码（协议中的位置）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.Status">
+            <summary>
+            当前警报值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.TargetCode">
+            <summary>
+            警报对象唯一标识
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.NormalValue">
+            <summary>
+            正常值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.AlarmTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.RepairTime">
+            <summary>
+            修复时长
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.Enabled">
+            <summary>
+            是否启用该警报
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceAlarm.SetEnabled(System.Boolean)">
+            <summary>
+            是否启用
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction">
+            <summary>
+            设备功能（主要解决设备参数的配置）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.FunctionCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.PortNumber">
+            <summary>
+            指令接收对象(-1表示主机)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.Setting">
+            <summary>
+            设置的值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.LockSetting">
+            <summary>
+            锁定配置，防止全局配置时覆盖值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.CallbackCodes">
+            <summary>
+            一个功能会有多个命令码
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.SettingTypeName">
+            <summary>
+            值的类型
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceFunction.SetEnabled(System.Boolean)">
+            <summary>
+            是否启用
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.AccountId">
+            <summary>
+            账号（手机号码不可以作为账号，修改号码会让账号失效）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.AlarmBlackList">
+            <summary>
+            需要屏蔽的警报，英文逗号隔开
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.FunctionBlackList">
+            <summary>
+            需要屏蔽的功能，英文逗号隔开
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.SendSMS">
+            <summary>
+            短信通知
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.SendEmail">
+            <summary>
+            邮件通知
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.CallPhone">
+            <summary>
+            打电话通知
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.Alarmed_SendSMS">
+            <summary>
+            短信通知
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.Alarmed_SendEmail">
+            <summary>
+            邮件通知
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DevicePower.Alarmed_CallPhone">
+            <summary>
+            打电话通知
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp">
+            <summary>
+            负载扩展属性
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.DeviceId">
+            <summary>
+            负载id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.PropName">
+            <summary>
+            属性名称（前端绑定的变量）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.PropText">
+            <summary>
+            属性显示文本（前端提示文本）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.PropType">
+            <summary>
+            属性类型（默认字符串）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.GroupName">
+            <summary>
+            分组名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.PropValue">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.DeviceProp.CanRemove">
+            <summary>
+            是否可以删除（某些固定属性不允许删除）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Camera.DeviceProps">
+            <summary>
+            扩展属性。默认扩展：账号、密码、端口、通道号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Load.PortNumber">
+            <summary>
+            回路端口
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.NetSwitch">
+            <summary>
+            网络交换机
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Router">
+            <summary>
+            路由器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Router.Parent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal">
+            <summary>
+            智维终端（主设备当做一个站点）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.RegionId">
+            <summary>
+            自定义分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.LocationId">
+            <summary>
+            位置信息（可能有多个主机放在同一个位置组成一个站点）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.TerminalCode">
+            <summary>
+            子型号 default simple
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._channels">
+            <summary>
+            输出回路
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._parts">
+            <summary>
+            配件
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._deviceFunctions">
+            <summary>
+            功能配置
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._timedTasks">
+            <summary>
+            定时任务（有开关才会有定时任务）
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._controllers">
+            <summary>
+            控制器（一般指开关）
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._sensors">
+            <summary>
+            传感器（模拟量）
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._deviceAlarms">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal._loads">
+            <summary>
+            负载集合
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.Parts">
+            <summary>
+            传感器（抽象的并非实际存在，比如用电量等）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.DevFunctions">
+            <summary>
+            控制开关
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.TimedTasks">
+            <summary>
+            定时任务
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.Channels">
+            <summary>
+            输出回路
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.Controllers">
+            <summary>
+            控制器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.Sensors">
+            <summary>
+            传感器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.DeviceAlarms">
+            <summary>
+            警报器
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.SetTerminalDefaultCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.SetTerminalSimpleCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.AddChannel(System.String,System.Int32,SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType,System.String,System.Nullable{SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.OutPutType},System.Nullable{System.Boolean},System.Nullable{System.Double},System.Boolean,System.String,System.String)">
+            <summary>
+            添加回路(自动识别不会手动添加)
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.AddSensor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean},System.String)">
+            <summary>
+            添加传感器
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.AddPart(System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.Boolean)">
+            <summary>
+            配件
+            </summary>
+            <param name="deviceId"></param>
+            <param name="partCode"></param>
+            <param name="portNumber"></param>
+            <param name="status"></param>
+            <param name="alarmStatus"></param>
+            <param name="enabled"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.AddFunction(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            添加设备功能
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.AddTimedTask(System.String,System.Int32,System.Boolean,System.String,SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecType,SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecAction,System.Int32,SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType,SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Moment,System.String)">
+            <summary>
+            添加定时任务
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.AddLoad(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Boolean,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            添加负载
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.SetAlarmStatus(System.String,System.String,System.String)">
+            <summary>
+            设置警报状态
+            </summary>
+            <param name="alarmCode"></param>
+            <param name="status"></param>
+            <param name="targetCode">报警对象编号</param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.SetControllerStatus(System.String,System.String)">
+            <summary>
+            设置开关状态
+            </summary>
+            <param name="controllerCode"></param>
+            <param name="status"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Terminal.SetFunctionSetting(System.String,System.String)">
+            <summary>
+            功能配置（注意，定时任务是独立的）
+            </summary>
+            <param name="functionCode"></param>
+            <param name="setting"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TerminalCode">
+            <summary>
+            子型号
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TerminalCode.Default">
+            <summary>
+            标准版
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TerminalCode.Simple">
+            <summary>
+            简配版
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.UPS">
+            <summary>
+            UPS
+            （该UPS为外接设备，与设备内部的UPS完全不一样，设备内部仅仅是个大电容
+            该UPS的作用是给智维终端以及整个站点供电，需要对接SNMP协议，拓扑图上只需在市电输入和电源防雷器之间增加一个UPS图标）
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.Add(SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device)">
+            <summary>
+            新增
+            </summary>
+            <param name="device"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.Update(SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device)">
+            <summary>
+            全部更新
+            </summary>
+            <param name="device"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.Patch(SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device)">
+            <summary>
+            只更新修改部分
+            </summary>
+            <param name="device"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.GetAsync(System.String)">
+            <summary>
+            根据主键获取设备
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.GetAsync``1(System.String,System.Linq.Expressions.Expression{System.Func{SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device,``0}}[])">
+            <summary>
+            按需聚合
+            </summary>
+            <typeparam name="TProperty"></typeparam>
+            <param name="id"></param>
+            <param name="includes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.FindByEquipNumAsync(System.String)">
+            <summary>
+            根据设备编号获取设备
+            </summary>
+            <param name="equipNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.FindByEquipNumAsync``1(System.String,System.Linq.Expressions.Expression{System.Func{SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device,``0}}[])">
+            <summary>
+            按需聚合
+            </summary>
+            <typeparam name="TProperty"></typeparam>
+            <param name="equipNum"></param>
+            <param name="includes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.IDeviceRepository.ExistsByEquipNumAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="equipNum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location">
+            <summary>
+            点位信息（可以作为容器使用）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.UseMapType">
+            <summary>
+            默认为百度地图 0
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.Latitude">
+            <summary>
+            纬度（南纬为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.Longitude">
+            <summary>
+            经度（西经为负数）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.Address">
+            <summary>
+            地址信息
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.Province">
+            <summary>
+            省
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.City">
+            <summary>
+            市
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.District">
+            <summary>
+            区
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.Street">
+            <summary>
+            街道
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.StreetNumber">
+            <summary>
+            门牌号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Location.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part">
+            <summary>
+            配件：除允许用户远程控制的部件外都是配件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.DeviceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.PortNumber">
+            <summary>
+            回路地址（-1表示主机）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.PartCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.Enabled">
+            <summary>
+            是否启用
+            </summary>                                   
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.Status">
+            <summary>
+            开关量状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.InstallTime">
+            <summary>
+            安装时间
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Part.SetEnabled(System.Boolean)">
+            <summary>
+            是否启用
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor">
+            <summary>
+            传感器（只有模拟量）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.DeviceId">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.SensorCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.AlarmStatus">
+            <summary>
+            警报状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.UpperValue">
+            <summary>
+            模拟量上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.LowerValue">
+            <summary>
+            模拟量下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.RealValue">
+            <summary>
+            模拟量
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Sensor.SetEnabled(System.Boolean)">
+            <summary>
+            是否启用
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask">
+            <summary>
+            定时任务
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.DeviceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.TaskId">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.ExecType">
+            <summary>
+            定时类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.ExecAction">
+            <summary>
+            执行的动作
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.Executed">
+            <summary>
+            是否已执行（只有只执行一次的才有该状态）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.LoopType">
+            <summary>
+            循环周期类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.Moment">
+            <summary>
+            执行的时刻
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.LoopMonent">
+            <summary>
+            周期内参与循环的时间（比如，每周一执行或者每月的1号 10 20号执行,多个由英文逗号隔开）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.TimedTask.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecType">
+            <summary>
+            执行类型
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecType.Onece">
+            <summary>
+            一次
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecType.Loop">
+            <summary>
+            循环
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType">
+            <summary>
+            循环类型
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType.Minute">
+            <summary>
+            分钟
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType.Hour">
+            <summary>
+            小时
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType.Day">
+            <summary>
+            天
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType.Week">
+            <summary>
+            周
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType.Month">
+            <summary>
+            月
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.LoopType.Year">
+            <summary>
+            年
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecAction.Off">
+            <summary>
+            关
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceAggregate.ExecAction.On">
+            <summary>
+            开
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType">
+            <summary>
+            设备类型（设备类型相关的实体都有基础数据，且只有修改接口无法新增和删除。修改主要为启用禁用功能）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Code">
+            <summary>
+            编号（协议中的设备编号）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Model">
+            <summary>
+            型号（协议的版本号）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.GroupKey">
+            <summary>
+            分组key
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Enabled">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.AutoCreate">
+            <summary>
+            自动创建
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.IsMaster">
+            <summary>
+            是否为主机
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.TransferType">
+            <summary>
+            传输协议
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.ProtocolType">
+            <summary>
+            通信协议
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.ProtocolVersion">
+            <summary>
+            协议版本
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Alarms">
+            <summary>
+            该类设备拥有的警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Functions">
+            <summary>
+            该类型设备拥有的功能
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Channels">
+            <summary>
+            默认回路
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Parts">
+            <summary>
+            默认配件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Controllers">
+            <summary>
+            默认控制器
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.Sensors">
+            <summary>
+            默认传感器
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.SetEnabled">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.SetDisabled">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceType.SetWarrantyInformation(System.String,System.String,System.String,System.Double)">
+            <summary>
+            设置维保信息
+            </summary>
+            <param name="companyId"></param>
+            <param name="oprationId"></param>
+            <param name="brandId"></param>
+            <param name="warranty"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeCode">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeCode.UnKnow">
+            <summary>
+            未设置
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeCode.Terminal">
+            <summary>
+            智维终端控制器(Intelligent terminal)
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ProtocolType">
+            <summary>
+            协议类型
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ProtocolType.UnKnown">
+            <summary>
+            未设置
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ProtocolType.ModBus">
+            <summary>
+            ModBus
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ProtocolType.SNMP">
+            <summary>
+            SNMP
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ProtocolType.MQTT">
+            <summary>
+            MQTT
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.TransferType.UnKnown">
+            <summary>
+            未设置
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.TransferType.UDP">
+            <summary>
+            UDP
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.TransferType.TCP">
+            <summary>
+            TCP
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm">
+            <summary>
+            设备对应的警报（静态数据）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.DeviceTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.DeviceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmCode">
+            <summary>
+            警报代码（协议中的位置）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmName">
+            <summary>
+            警报名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.GroupName">
+            <summary>
+            警报分组
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmType">
+            <summary>
+            警报类型：持续性警报（温度过高）、瞬时警报（打火）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmFrom">
+            <summary>
+            警报来源：0 监控终端；1 回路；2 负载(一般只有离线、在线状态)；3 配件 ...
+            不同的设备警报的来源可能不一样，比如监控终端
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.TargetCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmLevel">
+            <summary>
+            警报级别
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.Enabled">
+            <summary>
+            是否启用该警报
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.NormalValue">
+            <summary>
+            正常状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.StatusMapDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmingDescription">
+            <summary>
+            发生警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AlarmedDescription">
+            <summary>
+            解除警报时发送的模板
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.SendAlarmingMessage">
+            <summary>
+            报警时发送短信
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.SendAlarmedMessage">
+            <summary>
+            解除警报时发送短信
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.CallAlarmingPhone">
+            <summary>
+            报警时拨打语音电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.CallAlarmedPhone">
+            <summary>
+            解除报警时拨打语音电话
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.SendAlarmingEmail">
+            <summary>
+            报警时发送邮件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.SendAlarmedEmail">
+            <summary>
+            解除警报时发送邮件
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.AutoSendOrder">
+            <summary>
+            自动派单
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.IsStatistics">
+            <summary>
+            是否参与统计
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeAlarm.RepairTime">
+            <summary>
+            默认修复时长
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.AlarmFrom.Master">
+            <summary>
+            主机
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.AlarmFrom.Load">
+            <summary>
+            负载
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.AlarmFrom.Sensor">
+            <summary>
+            传感器
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.AlarmFrom.Part">
+            <summary>
+            配件
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.PortNumber">
+            <summary>
+            回路编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.PortDefaultName">
+            <summary>
+            输出端口默认名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.PortType">
+            <summary>
+            端口类型。0：电源 1：电源兼网口 2：网口 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.OutputType">
+            <summary>
+            输出类型：AC 交流电；DC 直流电
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.OutputThreePhase">
+            <summary>
+            三相输出
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.OutputValue">
+            <summary>
+            输出电压
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeChannel.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.OutPutType">
+            <summary>
+            电流类型
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.OutPutType.UnKnown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.OutPutType.AC">
+            <summary>
+            交流
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.OutPutType.DC">
+            <summary>
+            直流
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType.Vedio">
+            <summary>
+            视频通道
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType.Optical">
+            <summary>
+            光端机
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType.LED">
+            <summary>
+            补光灯
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType.Heating">
+            <summary>
+            加热设备
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType.Fan">
+            <summary>
+            风扇
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PortType.Other">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.ControllerCode">
+            <summary>
+            控制器编号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.ControllerType">
+            <summary>
+            控制器类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.Buttons">
+            <summary>
+            按钮（英文逗号隔开）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.ControllerStatus">
+            <summary>
+            控制器默认状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeController.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ControllerType">
+            <summary>
+            控制器
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.ControllerType.Switch">
+             <summary>
+            开关
+             </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction">
+            <summary>
+            设备功能
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.PortNumber">
+             <summary>
+            功能模块的粒度一般不会细化到端口
+             </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.FunctionName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.FunctionCode">
+            <summary>
+            功能编号（内部自定义）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.Sort">
+            <summary>
+            功能排序
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.Description">
+            <summary>
+            备注描述（帮助描述）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.Setting">
+            <summary>
+            默认设置的值
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.SettingTypeName">
+            <summary>
+            值的类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeFunction.CallbackCodes">
+            <summary>
+            一个功能会有多个命令码
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.FunctionType">
+            <summary>
+            写入状态
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.FunctionType.ReadOnly">
+            <summary>
+            只读
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.FunctionType.ReadWrite">
+            <summary>
+            读写
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.PartCode">
+            <summary>
+            配件代码 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.PartName">
+            <summary>
+            配件名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.PartType">
+            <summary>
+            配件类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.HasStatus">
+            <summary>
+            拥有状态
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.StatusIndex">
+            <summary>
+            协议中的下标
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.CompanyId">
+            <summary>
+            运维单位
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.OprationId">
+            <summary>
+            运维人员
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypePart.Warranty">
+            <summary>
+            质保期
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PartType.UnKnown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PartType.Necessary">
+            <summary>
+            必要零件
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PartType.Accessory">
+            <summary>
+            附件(选配的模块)
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.PartType.Extend">
+            <summary>
+            扩展（市电/自定义电源等）
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.DeviceTypeId">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.PortNumber">
+            <summary>
+            控制器的端口(-1表示主机的控制器)
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.SensorCode">
+            <summary>
+            传感器编码
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.SensorName">
+            <summary>
+            传感器名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.SensorType">
+            <summary>
+            配件代码 
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.UpperValue">
+            <summary>
+            模拟量上限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.LowerValue">
+            <summary>
+            模拟量下限
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.DeviceTypeSensor.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.SensorType.UnKnown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.SensorType.Voltage">
+            <summary>
+            电压传感器
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.SensorType.Current">
+            <summary>
+            电流互感器
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.SensorType.Temperature">
+            <summary>
+            温度传感器
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.SensorType.Leakage">
+            <summary>
+            漏电互感器
+            </summary>
+        </member>
+        <member name="F:SFBR.Device.Domain.AggregatesModel.DeviceTypeAggregate.SensorType.Humidity">
+            <summary>
+            湿度传感器
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.RegionAggregate.IRegionRepository.Add(SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region)">
+            <summary>
+            新增
+            </summary>
+            <param name="region"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.RegionAggregate.IRegionRepository.Update(SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region)">
+            <summary>
+            全部更新
+            </summary>
+            <param name="region"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.RegionAggregate.IRegionRepository.Patch(SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region)">
+            <summary>
+            只更新修改部分
+            </summary>
+            <param name="region"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.RegionAggregate.IRegionRepository.Delete(SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region)">
+            <summary>
+            删除
+            </summary>
+            <param name="region"></param>
+        </member>
+        <member name="M:SFBR.Device.Domain.AggregatesModel.RegionAggregate.IRegionRepository.GetAsync(System.String)">
+            <summary>
+            根据主键获取设备
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region.RegionCode">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region.ParentId">
+            <summary>
+            上级区域
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region.Parent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region.TentantId">
+            <summary>
+            租户
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.RegionAggregate.Region.Description">
+            <summary>
+            备注描述
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.AggregatesModel.UserAggregate.User">
+            <summary>
+            用户基本信息（冗余的数据，用户登录的时候新增或者更新数据无删除操作）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.Account">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.Password">
+            <summary>
+            登录密码（加密后的）
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.Name">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.TentantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.Email">
+            <summary>
+            email
+            </summary>
+        </member>
+        <member name="P:SFBR.Device.Domain.AggregatesModel.UserAggregate.User.IsDeveloper">
+            <summary>
+            是否为开发人员
+            </summary>
+        </member>
+        <member name="M:SFBR.Device.Domain.DomainServices.IDomainService.SetDevicePower(System.String,System.Collections.Generic.List{SFBR.Device.Domain.AggregatesModel.DeviceAggregate.Device})">
+            <summary>
+            配置设备权限
+            </summary>
+            <param name="userId"></param>
+            <param name="devices"></param>
+        </member>
+        <member name="T:SFBR.Device.Domain.Events.DeviceAlarmStatusChangeDomainEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.Events.DeviceOffLineDomainEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SFBR.Device.Domain.Events.DeviceOnlineDomainEvent">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

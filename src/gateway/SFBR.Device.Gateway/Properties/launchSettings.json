@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "SFBR.Device.Gateway": {
+      "commandName": "Project"
+    }
+  }
+}

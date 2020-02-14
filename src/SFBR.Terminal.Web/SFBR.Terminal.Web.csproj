@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\static\css\app.85c93b8b.css" />
+    <None Include="wwwroot\static\css\chunk-101fda0d.68ebf020.css" />
+    <None Include="wwwroot\static\css\chunk-15850d61.00b52d62.css" />
+    <None Include="wwwroot\static\css\chunk-1a7a916b.18b732de.css" />
+    <None Include="wwwroot\static\css\chunk-309e8bae.3f7335d7.css" />
+    <None Include="wwwroot\static\css\chunk-35416ba8.4bdcfdd8.css" />
+    <None Include="wwwroot\static\css\chunk-3606a519.1f3c21de.css" />
+    <None Include="wwwroot\static\css\chunk-3b15dfb6.7de16c54.css" />
+    <None Include="wwwroot\static\css\chunk-7200b47d.7edada6b.css" />
+    <None Include="wwwroot\static\css\chunk-72e5299e.15cda277.css" />
+    <None Include="wwwroot\static\css\chunk-757334ae.754d62c2.css" />
+    <None Include="wwwroot\static\css\chunk-787540de.6ab1c5be.css" />
+    <None Include="wwwroot\static\css\chunk-894feb00.edf0f3f3.css" />
+    <None Include="wwwroot\static\css\chunk-952d2c2e.1d934e80.css" />
+    <None Include="wwwroot\static\css\chunk-cb827ed2.941c3534.css" />
+    <None Include="wwwroot\static\css\chunk-e9b4b36a.a5dba9a3.css" />
+    <None Include="wwwroot\static\css\chunk-elementUI.18b11d0e.css" />
+    <None Include="wwwroot\static\css\chunk-libs.5cf311f0.css" />
+    <None Include="wwwroot\static\fonts\element-icons.2fad952a.woff" />
+    <None Include="wwwroot\static\fonts\element-icons.6f0a7632.ttf" />
+    <None Include="wwwroot\static\img\404.a57b6f31.png" />
+    <None Include="wwwroot\static\img\404_cloud.0f4bc32b.png" />
+    <None Include="wwwroot\static\img\bg.4c4fae6d.png" />
+    <None Include="wwwroot\static\img\bg_1.7461e58d.png" />
+    <None Include="wwwroot\static\img\logo.24a221b4.png" />
+    <None Include="wwwroot\static\img\logo.3a53bb2e.png" />
+    <None Include="wwwroot\static\img\wenzi.fce82756.png" />
+    <None Include="wwwroot\static\js\app.bf610a91.js" />
+    <None Include="wwwroot\static\js\chunk-101fda0d.e40a3630.js" />
+    <None Include="wwwroot\static\js\chunk-15850d61.36651137.js" />
+    <None Include="wwwroot\static\js\chunk-1a7a916b.3141cf6e.js" />
+    <None Include="wwwroot\static\js\chunk-2d0c8bf7.816eb459.js" />
+    <None Include="wwwroot\static\js\chunk-2d0d0f79.14ad01a9.js" />
+    <None Include="wwwroot\static\js\chunk-2d0e4b0c.f143f098.js" />
+    <None Include="wwwroot\static\js\chunk-2d0e4e1f.2d5c7ed8.js" />
+    <None Include="wwwroot\static\js\chunk-2d0e944c.dc42fbc8.js" />
+    <None Include="wwwroot\static\js\chunk-2d2104c6.979b2ce5.js" />
+    <None Include="wwwroot\static\js\chunk-2d226cab.65df2a7b.js" />
+    <None Include="wwwroot\static\js\chunk-2d229205.f456cb41.js" />
+    <None Include="wwwroot\static\js\chunk-309e8bae.2ca852fd.js" />
+    <None Include="wwwroot\static\js\chunk-35416ba8.c6ce72d8.js" />
+    <None Include="wwwroot\static\js\chunk-3606a519.f0fb14f0.js" />
+    <None Include="wwwroot\static\js\chunk-3b15dfb6.a16ef55e.js" />
+    <None Include="wwwroot\static\js\chunk-7200b47d.63e80408.js" />
+    <None Include="wwwroot\static\js\chunk-72e5299e.803b6e36.js" />
+    <None Include="wwwroot\static\js\chunk-74926326.f71f934a.js" />
+    <None Include="wwwroot\static\js\chunk-757334ae.a76aa1a1.js" />
+    <None Include="wwwroot\static\js\chunk-787540de.7c782840.js" />
+    <None Include="wwwroot\static\js\chunk-894feb00.07c33cfb.js" />
+    <None Include="wwwroot\static\js\chunk-952d2c2e.5ce0e9fb.js" />
+    <None Include="wwwroot\static\js\chunk-cb827ed2.72c77a61.js" />
+    <None Include="wwwroot\static\js\chunk-d9bdb198.d7d8f5f6.js" />
+    <None Include="wwwroot\static\js\chunk-e9b4b36a.1d813db5.js" />
+    <None Include="wwwroot\static\js\chunk-elementUI.dca30fc0.js" />
+    <None Include="wwwroot\static\js\chunk-libs.0808d6e2.js" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.1.0" />
+    <PackageReference Include="Topshelf" Version="4.2.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\index1.html">
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="停止.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="卸载.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="启动.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="安装.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

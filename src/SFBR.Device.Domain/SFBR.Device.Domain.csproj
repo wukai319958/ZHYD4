@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\SifangProject\SkyNet2\src\SFBR.Device.Domain\SFBR.Device.Domain.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AggregatesModel\AlarmAggregate\**" />
+    <Compile Remove="AggregatesModel\CatalogAggregate\**" />
+    <Compile Remove="AggregatesModel\JobOrderAggregate\**" />
+    <Compile Remove="AggregatesModel\LoadAggregate\**" />
+    <Compile Remove="AggregatesModel\LogAggregate\**" />
+    <Compile Remove="AggregatesModel\OprationAggregate\**" />
+    <EmbeddedResource Remove="AggregatesModel\AlarmAggregate\**" />
+    <EmbeddedResource Remove="AggregatesModel\CatalogAggregate\**" />
+    <EmbeddedResource Remove="AggregatesModel\JobOrderAggregate\**" />
+    <EmbeddedResource Remove="AggregatesModel\LoadAggregate\**" />
+    <EmbeddedResource Remove="AggregatesModel\LogAggregate\**" />
+    <EmbeddedResource Remove="AggregatesModel\OprationAggregate\**" />
+    <None Remove="AggregatesModel\AlarmAggregate\**" />
+    <None Remove="AggregatesModel\CatalogAggregate\**" />
+    <None Remove="AggregatesModel\JobOrderAggregate\**" />
+    <None Remove="AggregatesModel\LoadAggregate\**" />
+    <None Remove="AggregatesModel\LogAggregate\**" />
+    <None Remove="AggregatesModel\OprationAggregate\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AggregatesModel\DeviceAggregate\Button.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\DeviceExtension.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Devices\Fan.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Devices\FillLight.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Devices\Heater.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Devices\InTermEx.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Devices\NetLoad.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Devices\Optical.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\IParameter.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\IPart.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\ITentant.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\NetLoad.cs" />
+    <Compile Remove="AggregatesModel\DeviceAggregate\Parameter.cs" />
+    <Compile Remove="AggregatesModel\DeviceAOM.cs" />
+    <Compile Remove="AggregatesModel\DeviceTypeAggregate\AlarmCode.cs" />
+    <Compile Remove="AggregatesModel\DeviceTypeAggregate\DeviceTypeProp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.componentmodel.annotations\4.5.0\ref\netstandard2.0\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
